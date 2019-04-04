@@ -11,6 +11,7 @@ import Alamofire
 import SwiftyJSON
 import NVActivityIndicatorView
 import CoreLocation
+import Foundation
 
 class ViewController: UIViewController, CLLocationManagerDelegate {
 
@@ -76,7 +77,8 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
                 self.locationLabel.text = jsonResponse["name"].stringValue
                 self.conditionImageView.image = UIImage(named: iconName)
                 self.conditionLabel.text = jsonWeather["main"].stringValue
-                self.temperatureLabel.text = jsonTemp["temp"].stringValue
+                let temp = Int(round(jsonTemp["temp"].doubleValue))
+                self.temperatureLabel.text = "\(temp)"
                 
                 let date = Date()
                 let dateFormatter = DateFormatter()

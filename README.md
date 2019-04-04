@@ -9,7 +9,7 @@ An iOS weather app.
 - Git 2.21
 - Cocoapods 1.6.1
 
-## Features to implement
+## Features implemented
 
 - Get user's current location using CoreLocation
 - Make request to a web api
