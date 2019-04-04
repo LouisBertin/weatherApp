@@ -16,3 +16,9 @@ An iOS weather app.
 - Read JSON response
 - Display loading indicator
 - Set gradient background to UIView
+
+## Pods
+
+- Alamofire
+- SwiftyJSON
+- NVActivityIndicatorView
