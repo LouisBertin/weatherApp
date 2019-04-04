@@ -7,6 +7,7 @@ An iOS weather app.
 - Xcode 10.2
 - Swift 5
 - Git 2.21
+- Cocoapods 1.6.1
 
 ## Features to implement
 

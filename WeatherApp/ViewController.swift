@@ -7,9 +7,14 @@
 //
 
 import UIKit
+import Alamofire
+import SwiftyJSON
+import NVActivityIndicatorView
+import CoreLocation
 
 class ViewController: UIViewController {
 
+    // vars
     @IBOutlet weak var locationLabel: UILabel!
     @IBOutlet weak var dayLabel: UILabel!
     @IBOutlet weak var conditionImageView: UIImageView!
@@ -17,6 +22,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var temperatureLabel: UILabel!
     @IBOutlet weak var backgroundView: UIView!
     
+    // init
     let gradientLayer = CAGradientLayer()
     
     override func viewDidLoad() {
